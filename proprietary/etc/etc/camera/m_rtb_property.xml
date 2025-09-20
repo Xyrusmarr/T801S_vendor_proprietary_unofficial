@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertySet>
+	<Struct id="rtb">
+		<Key id="0" name="i32MainWidth_CropNoScale">Int</Key>
+		<Key id="1" name="i32MainHeight_CropNoScale">Int</Key>
+		<Key id="2" name="i32AuxWidth_CropNoScale">Int</Key>
+		<Key id="3" name="i32AuxHeight_CropNoScale">Int</Key>
+		<Key id="4" name="i32ImageDegree">Int</Key>
+	</Struct>
+	<StaticSet id="Default">
+		<Property name="i32MainWidth_CropNoScale">4224</Property>
+		<Property name="i32ImageDegree">90</Property>
+		<Property name="i32MainHeight_CropNoScale">3168</Property>
+		<Property name="i32AuxHeight_CropNoScale">1200</Property>
+		<Property name="i32AuxWidth_CropNoScale">1600</Property>
+	</StaticSet>
+</PropertySet>

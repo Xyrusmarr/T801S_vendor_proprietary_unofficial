@@ -1,0 +1,4 @@
+service vendor.linearvibrator /vendor/bin/hw/vendor.tct.hardware.linearvibrator@1.0-service
+    class hal
+    user system
+    group system input

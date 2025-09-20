@@ -1,0 +1,13 @@
+service vendor.tct_diag_service /vendor/bin/tct_diag_service
+    class core
+    user root
+    group system diag oem_2901 wakelock log
+    seclabel u:r:tct_diag_service:s0
+    disabled
+
+on property:ro.boot.inproductionflag=true
+    enable vendor.tct_diag_service
+
+on property:ro.boot.mmitest=true
+    enable vendor.tct_diag_service
+    setprop dev.tct.MMITest true

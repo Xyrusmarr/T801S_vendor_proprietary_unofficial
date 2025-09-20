@@ -1,0 +1,5 @@
+service sysinfo-hal-1-0 /vendor/bin/hw/vendor.tct.hardware.sysinfo@1.0-service
+    class hal
+    user root
+    group system
+    writepid /dev/cpuset/system-background/tasks

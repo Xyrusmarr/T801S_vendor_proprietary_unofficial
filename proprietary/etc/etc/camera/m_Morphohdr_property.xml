@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertySet>
+	<Struct id="Morpho">
+		<Key id="0" name="width">Int</Key>
+		<Key id="1" name="height">Int</Key>
+		<Key id="2" name="format">Int</Key>
+		<Key id="3" name="input_num">Int</Key>
+		<Key id="4" name="max_ev">Int</Key>
+		<Key id="5" name="min_ev">Int</Key>
+		<Key id="6" name="y_nr_level">Float</Key>
+		<Key id="7" name="c_nr_level">Float</Key>
+		<Key id="8" name="c_nr_times">Int</Key>
+		<Key id="9" name="obc">Double</Key>
+		<Key id="10" name="ghost_ratio_thres">Double</Key>
+		<Key id="11" name="gain">Double</Key>
+		<Key id="12" name="gamma">Double</Key>
+		<Key id="13" name="sharpness">Int</Key>
+		<Key id="14" name="contrast">Double</Key>
+		<Key id="15" name="saturation">Double</Key>
+		<Key id="16" name="hdr_confidence">Int</Key>
+		<Key id="17" name="num_cores">Int</Key>
+	</Struct>
+	<StaticSet id="Default">
+		<Property name="num_cores">1</Property>
+		<Property name="y_nr_level">1.0</Property>
+		<Property name="max_ev">12</Property>
+		<Property name="ghost_ratio_thres">0.4</Property>
+		<Property name="min_ev">-12</Property>
+		<Property name="format">0</Property>
+		<Property name="sharpness">700</Property>
+		<Property name="input_num">3</Property>
+		<Property name="obc">5.5</Property>
+		<Property name="height">0</Property>
+		<Property name="contrast">0</Property>
+		<Property name="width">0</Property>
+		<Property name="saturation">0</Property>
+		<Property name="gain">1</Property>
+		<Property name="c_nr_level">5.0</Property>
+		<Property name="hdr_confidence">160</Property>
+		<Property name="gamma">1</Property>
+		<Property name="c_nr_times">3</Property>
+	</StaticSet>
+</PropertySet>

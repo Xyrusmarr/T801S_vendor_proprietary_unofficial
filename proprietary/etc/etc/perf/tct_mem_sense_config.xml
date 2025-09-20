@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mem-sense-config>
+    <watermark>
+        <level>
+            <!-- High is the level which nothing will be done (i.e. unused for now) -->
+            <item key="high" uom="mb">2500</item>
+            <!-- Mid-High is the level below which anonpage swap will work -->
+            <item key="mid_high" uom="mb">2000</item>
+            <!-- Mid-High is the level below which cached processes may be killed when idle -->
+            <item key="moderate" uom="mb">1100</item>
+            <!-- Mid is the level below which cached processes may be killed -->
+            <item key="mid" uom="mb">950</item>
+            <!-- Mid is the level below which heavy processes may be killed -->
+            <item key="low" uom="mb">750</item>
+            <!-- Mid is the level below which heavy processes may be killed -->
+            <item key="critical" uom="mb">400</item>
+        </level>
+        <policy>
+            <!-- Trigger Policy -->
+            <item key="watermark_enabled">true</item>
+            <!-- Time need to be spent before trigger the operation -->
+            <item key="trigger_delayed" uom="second">3</item>
+            <!-- Minimum interval between each manual trigger -->
+            <item key="trigger_interval" uom="second">0</item>
+            <!-- Watermark Checker Policy -->
+            <!-- Buffer zone of each level of watermark for recheck use -->
+            <item key="buffer_zone" uom="mb">50</item>
+            <!-- Minimum interval between each check -->
+            <item key="recheck_interval" uom="second">5</item>
+            <!-- Level below which CPU loading can be regarded as low -->
+            <item key="cpu_load_low">40</item>
+            <!-- Level above which CPU loading can be regarded as high -->
+            <item key="cpu_load_high">80</item>
+            <!-- netlink socket prototol listened in kernel-->
+            <item key="netlink_socket_protocol">24</item>
+            <!-- Kill Policy -->
+            <!-- forbit forcestop -->
+            <item key="forbit_forcestop">true</item>
+            <!-- max count for batch kill in moderate watermark -->
+            <item key="max_kill_count_moderate_watermark">2</item>
+            <!-- max count for batch kill in mid watermark -->
+            <item key="max_batch_kill_count_mid_watermark">3</item>
+            <!-- max count for batch kill in low watermark -->
+            <item key="max_batch_kill_count_low_watermark">6</item>
+            <!-- max count for batch kill in critical watermark -->
+            <item key="max_batch_kill_count_critical_watermark">6</item>
+            <!-- Minimum interval for each process kill request -->
+            <item key="kill_interval" uom="second">1</item>
+            <!-- Max oomadj in which processes can be killed -->
+            <item key="max_proc_oomadj">1001</item>
+            <!-- Min oomadj in which processes can be killed -->
+            <item key="min_proc_oomadj">200</item>
+            <!-- Reclaim Policy -->
+            <!-- Minimum interval for each process swap request -->
+            <item key="swap_interval" uom="second">0</item>
+            <!-- Threashold of pss increase when deciding a force swap -->
+            <item key="pss_inc_threshold" uom="mb">10</item>
+            <!-- Interval of pss increase check when deciding a force swap -->
+            <item key="pss_inc_check_interval" uom="ms">300000</item>
+            <!-- Max pagecache reclaim count for each process -->
+            <item key="max_proc_count_reclaim">5</item>
+            <!-- Max anonpage swap/reclaim count for each process -->
+            <item key="max_proc_count_swap">3</item>
+            <!-- Threshold for swapfree when stop swapping -->
+            <item key="zram_threshold" uom="mb">100</item>
+            <!-- Stepping intervals for each process pagecache/anonpage reclaim -->
+            <item key="page_cache_reclaim_check_interval">"5000,60000,120000"</item>
+        </policy>
+        <white-list>
+            <item match="exact">"com.tcl.android.launcher"</item>
+            <item match="exact">"com.android.systemui"</item>
+            <item match="exact">"com.google.android.gms"</item>
+            <item match="exact">"com.google.android.youtube"</item>
+            <item match="exact">"com.tencent.mm"</item>
+            <item match="prefix">"com.facebook"</item>
+        </white-list>
+    </watermark>
+    <bigmemory>
+        <configuration>
+            <item key="bigmemory_enabled">true</item>
+            <item key="drop_pagecache_rate">75</item>
+            <item key="max_kill_proc_count">5</item>
+            <item key="dummy_uss_kb">16384</item>
+            <item key="cached_mem_factor">0</item>
+            <item key="max_kill_memory_kb">81920</item>
+        </configuration>
+        <white-list>
+            <item match="prefix">"com.tct"</item>
+            <item match="prefix">"com.google.android"</item>
+            <item match="suffix">"dialer"</item>
+            <item match="suffix">"contacts"</item>
+            <item match="suffix">"messaging"</item>
+            <!-- skype -->
+            <item match="suffix">"com.skype"</item>
+            <!-- teams -->
+            <item match="suffix">"com.microsoft"</item>
+        </white-list>
+        <memory-quota>
+            <item pkgname="com.eg.android.AlipayGphone" uom="mb">200</item>
+            <item pkgname="com.tcl.camera" uom="mb">400</item>
+            <item pkgname="com.tencent.mm" uom="mb">300</item>
+            <item pkgname="com.facebook.katana" uom="mb">200</item>
+        </memory-quota>
+    </bigmemory>
+    <app-boost>
+        <policy>
+            <!-- Require TMS v1.1.1 (AppBoost v1.0.3) and higher -->
+            <!-- Sub-function Switch -->
+            <item key="appboost_enabled">false</item>
+            <item key="usage_stats_window_in_days">3</item>
+            <item key="max_set_hot_level_retry_count">5</item>
+            <item key="set_hot_level_retry_interval_ms">100</item>
+            <item key="refresh_stats_threshold_day">1</item>
+            <!-- Note, level 3 refers to the highest privilege -->
+            <item key="level_1_count">1</item>
+            <item key="level_2_count">1</item>
+            <item key="level_3_count">1</item>
+        </policy>
+        <protect-lru>
+            <!-- Require TMS v1.1.4 (AppBoost v1.0.5) and higher -->
+            <!-- Note, level 3 refers to the highest privilege -->
+            <item pkgname="com.eg.android.AlipayGphone">1</item>
+            <item pkgname="com.xunmeng.pinduoduo">3</item>
+            <item pkgname="com.sdu.didi.psnger">2</item>
+        </protect-lru>
+    </app-boost>
+    <dmcc>
+        <policy>
+            <!-- Require TMS v1.1.5 (AppBoost v1.0.6) and higher -->
+            <!-- Sub-function Switch -->
+            <item key="dmcc_enabled">true</item>
+            <item key="anon_target" uom="mb">1500</item>
+            <item key="avail_target" uom="mb">1100</item>
+            <item key="free_size_min" uom="mb">320</item>
+            <item key="full_clean_size" uom="mb">16</item>
+            <item key="max_anon_clean_size" uom="mb">320</item>
+            <item key="idle_threshold">70</item>
+            <item key="swap_percent_low">55</item>
+        </policy>
+    </dmcc>
+</mem-sense-config>

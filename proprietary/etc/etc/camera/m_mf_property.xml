@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertySet>
+	<Struct id="Run">
+		<Key id="30" name="contrastStretching">Int</Key>
+		<Key id="31" name="isoValue">Int</Key>
+		<Key id="32" name="gain">Float</Key>
+		<Key id="33" name="dynamicRangeBoost">Int</Key>
+		<Key id="34" name="lowIntensityBoost">Int</Key>
+		<Key id="35" name="colorBoost">Int</Key>
+		<Key id="36" name="deghostingStrength">Int</Key>
+		<Key id="37" name="effectiveFrames">Int</Key>
+		<Key id="38" name="inputSharpnessThreshold">Int</Key>
+		<Key name="noiseReductionStrength">
+			<Data id="0" name="noiseReductionStrength0">Float</Data>
+			<Data id="1" name="noiseReductionStrength1">Float</Data>
+			<Data id="2" name="noiseReductionStrength2">Float</Data>
+			<Data id="3" name="noiseReductionStrength3">Float</Data>
+			<Data id="4" name="noiseReductionStrength4">Float</Data>
+			<Data id="5" name="noiseReductionStrength5">Float</Data>
+			<Data id="6" name="noiseReductionStrength6">Float</Data>
+			<Data id="7" name="noiseReductionStrength7">Float</Data>
+			<Data id="8" name="noiseReductionStrength8">Float</Data>
+			<Data id="9" name="noiseReductionStrength9">Float</Data>
+		</Key>
+		<Key name="colorFilterStrength">
+			<Data id="10" name="colorFilterStrength0">Float</Data>
+			<Data id="11" name="colorFilterStrength1">Float</Data>
+			<Data id="12" name="colorFilterStrength2">Float</Data>
+			<Data id="13" name="colorFilterStrength3">Float</Data>
+			<Data id="14" name="colorFilterStrength4">Float</Data>
+			<Data id="15" name="colorFilterStrength5">Float</Data>
+			<Data id="16" name="colorFilterStrength6">Float</Data>
+			<Data id="17" name="colorFilterStrength7">Float</Data>
+			<Data id="18" name="colorFilterStrength8">Float</Data>
+			<Data id="19" name="colorFilterStrength9">Float</Data>
+		</Key>
+		<Key name="sharpen">
+			<Data id="20" name="sharpen0">Float</Data>
+			<Data id="21" name="sharpen1">Float</Data>
+			<Data id="22" name="sharpen2">Float</Data>
+			<Data id="23" name="sharpen3">Float</Data>
+			<Data id="24" name="sharpen4">Float</Data>
+			<Data id="25" name="sharpen5">Float</Data>
+			<Data id="26" name="sharpen6">Float</Data>
+			<Data id="27" name="sharpen7">Float</Data>
+			<Data id="28" name="sharpen8">Float</Data>
+			<Data id="29" name="sharpen9">Float</Data>
+		</Key>
+	</Struct>
+	<Struct id="Initial">
+		<Key id="0" name="totalFrames">Int</Key>
+		<Key id="1" name="type">Enum</Key>
+		<Key id="2" name="cols">Int</Key>
+		<Key id="3" name="rows">Int</Key>
+		<Key id="4" name="extraPadRows">Int</Key>
+		<Key id="5" name="extraPadCols">Int</Key>
+		<Key id="6" name="zoom">Float</Key>
+		<Key id="7" name="outputCols">Int</Key>
+		<Key id="8" name="outputRows">Int</Key>
+		<Key id="9" name="xPosition">Int</Key>
+		<Key id="10" name="yPosition">Int</Key>
+		<Key id="15" name="outputBufferWidth">Int</Key>
+		<Key id="16" name="outputBufferHeight">Int</Key>
+		<Key id="17" name="useLegacyMode">Int</Key>
+		<Key id="18" name="wideAngleLensMode">Int</Key>
+		<Key name="ROI">
+			<Data id="11" name="xmin">Int</Data>
+			<Data id="12" name="ymin">Int</Data>
+			<Data id="13" name="xmax">Int</Data>
+			<Data id="14" name="ymax">Int</Data>
+		</Key>
+	</Struct>
+	<StaticSet id="Default">
+		<Property name="outputCols">0</Property>
+		<Property name="yPosition">-1</Property>
+		<Property name="extraPadRows">0</Property>
+		<Property name="cols">0</Property>
+		<Property name="xPosition">-1</Property>
+		<Property name="inputSharpnessThreshold">30</Property>
+		<Property name="deghostingStrength">60</Property>
+		<Property name="rows">0</Property>
+		<Property name="totalFrames">0</Property>
+		<Property name="sharpen">3.0</Property>
+		<Property name="type">9</Property>
+		<Property name="colorBoost">0</Property>
+		<Property name="isoValue">2000</Property>
+		<Property name="outputRows">0</Property>
+		<Property name="dynamicRangeBoost">0</Property>
+		<Property name="colorFilterStrength">1.0</Property>
+		<Property name="extraPadCols">0</Property>
+		<Property name="lowIntensityBoost">0</Property>
+		<Property name="gain">-1</Property>
+		<Property name="outputBufferHeight">0</Property>
+		<Property name="contrastStretching">0</Property>
+		<Property name="effectiveFrames">-1</Property>
+		<Property name="noiseReductionStrength">1.0</Property>
+		<Property name="useLegacyMode">0</Property>
+		<Property name="zoom">0</Property>
+		<Property name="outputBufferWidth">0</Property>
+		<Property name="wideAngleLensMode">0</Property>
+		<StructSet name="ROI">
+			<StructData name="xmin">-1</StructData>
+			<StructData name="ymin">-1</StructData>
+			<StructData name="ymax">-1</StructData>
+			<StructData name="xmax">-1</StructData>
+		</StructSet>
+		<ArrSet name="noiseReductionStrength">
+			<ArrData name="noiseReductionStrength9">1.0</ArrData>
+			<ArrData name="noiseReductionStrength8">1.0</ArrData>
+			<ArrData name="noiseReductionStrength5">1.0</ArrData>
+			<ArrData name="noiseReductionStrength4">1.0</ArrData>
+			<ArrData name="noiseReductionStrength7">1.0</ArrData>
+			<ArrData name="noiseReductionStrength6">1.0</ArrData>
+			<ArrData name="noiseReductionStrength1">1.0</ArrData>
+			<ArrData name="noiseReductionStrength0">1.0</ArrData>
+			<ArrData name="noiseReductionStrength3">1.0</ArrData>
+			<ArrData name="noiseReductionStrength2">1.0</ArrData>
+		</ArrSet>
+		<ArrSet name="colorFilterStrength">
+			<ArrData name="colorFilterStrength0">1.0</ArrData>
+			<ArrData name="colorFilterStrength1">1.0</ArrData>
+			<ArrData name="colorFilterStrength2">1.0</ArrData>
+			<ArrData name="colorFilterStrength3">1.0</ArrData>
+			<ArrData name="colorFilterStrength4">1.0</ArrData>
+			<ArrData name="colorFilterStrength5">1.0</ArrData>
+			<ArrData name="colorFilterStrength6">1.0</ArrData>
+			<ArrData name="colorFilterStrength7">1.0</ArrData>
+			<ArrData name="colorFilterStrength8">1.0</ArrData>
+			<ArrData name="colorFilterStrength9">1.0</ArrData>
+		</ArrSet>
+		<ArrSet name="sharpen">
+			<ArrData name="sharpen9">3.0</ArrData>
+			<ArrData name="sharpen8">3.0</ArrData>
+			<ArrData name="sharpen7">3.0</ArrData>
+			<ArrData name="sharpen6">3.0</ArrData>
+			<ArrData name="sharpen5">3.0</ArrData>
+			<ArrData name="sharpen4">3.0</ArrData>
+			<ArrData name="sharpen3">3.0</ArrData>
+			<ArrData name="sharpen2">3.0</ArrData>
+			<ArrData name="sharpen1">3.0</ArrData>
+			<ArrData name="sharpen0">3.0</ArrData>
+		</ArrSet>
+		<DynamicSet>
+			<DynamicGroup groupid="tctmf6400">
+				<Action max="6400" min="3600" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf1200">
+				<Action max="1200" min="800" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf200">
+				<Action max="200" min="0" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf9600++">
+				<Action max="200000" min="9600" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf3600">
+				<Action max="3600" min="2000" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf400">
+				<Action max="400" min="200" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf2000">
+				<Action max="2000" min="1200" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf9600">
+				<Action max="9600" min="6400" type="ISO"/>
+			</DynamicGroup>
+			<DynamicGroup groupid="tctmf800">
+				<Action max="800" min="400" type="ISO"/>
+			</DynamicGroup>
+		</DynamicSet>
+	</StaticSet>
+	<Group id="tctmf200">
+		<Property name="deghostingStrength">70</Property>
+		<Property name="colorFilterStrength0">0.3</Property>
+		<Property name="colorFilterStrength1">0.3</Property>
+		<Property name="colorFilterStrength2">0.3</Property>
+		<Property name="colorFilterStrength3">0.3</Property>
+		<Property name="colorFilterStrength4">0.3</Property>
+		<Property name="colorFilterStrength5">0.3</Property>
+		<Property name="colorFilterStrength6">0.3</Property>
+		<Property name="colorFilterStrength7">0.3</Property>
+		<Property name="colorFilterStrength8">0.3</Property>
+		<Property name="colorFilterStrength9">0.3</Property>
+		<Property name="sharpen9">2.8</Property>
+		<Property name="sharpen8">2.8</Property>
+		<Property name="sharpen7">2.8</Property>
+		<Property name="sharpen6">2.8</Property>
+		<Property name="sharpen5">2.8</Property>
+		<Property name="sharpen4">2.8</Property>
+		<Property name="sharpen3">2.8</Property>
+		<Property name="sharpen2">2.8</Property>
+		<Property name="sharpen1">2.8</Property>
+		<Property name="sharpen0">2.8</Property>
+		<Property name="noiseReductionStrength9">0.5</Property>
+		<Property name="noiseReductionStrength8">0.5</Property>
+		<Property name="noiseReductionStrength5">0.5</Property>
+		<Property name="noiseReductionStrength4">0.5</Property>
+		<Property name="noiseReductionStrength7">0.5</Property>
+		<Property name="noiseReductionStrength6">0.5</Property>
+		<Property name="noiseReductionStrength1">0.5</Property>
+		<Property name="noiseReductionStrength0">0.5</Property>
+		<Property name="noiseReductionStrength3">0.5</Property>
+		<Property name="noiseReductionStrength2">0.5</Property>
+	</Group>
+	<Group id="tctmf400">
+		<Property name="deghostingStrength">50</Property>
+		<Property name="colorFilterStrength0">0.5</Property>
+		<Property name="colorFilterStrength1">0.5</Property>
+		<Property name="colorFilterStrength2">0.5</Property>
+		<Property name="colorFilterStrength3">0.5</Property>
+		<Property name="colorFilterStrength4">0.5</Property>
+		<Property name="colorFilterStrength5">0.5</Property>
+		<Property name="colorFilterStrength6">0.5</Property>
+		<Property name="colorFilterStrength7">0.5</Property>
+		<Property name="colorFilterStrength8">0.5</Property>
+		<Property name="colorFilterStrength9">0.5</Property>
+		<Property name="sharpen9">2.6</Property>
+		<Property name="sharpen8">2.6</Property>
+		<Property name="sharpen7">2.6</Property>
+		<Property name="sharpen6">2.6</Property>
+		<Property name="sharpen5">2.6</Property>
+		<Property name="sharpen4">2.6</Property>
+		<Property name="sharpen3">2.6</Property>
+		<Property name="sharpen2">2.6</Property>
+		<Property name="sharpen1">2.6</Property>
+		<Property name="sharpen0">2.6</Property>
+		<Property name="noiseReductionStrength9">0.9</Property>
+		<Property name="noiseReductionStrength8">0.9</Property>
+		<Property name="noiseReductionStrength5">0.9</Property>
+		<Property name="noiseReductionStrength4">0.9</Property>
+		<Property name="noiseReductionStrength7">0.9</Property>
+		<Property name="noiseReductionStrength6">0.9</Property>
+		<Property name="noiseReductionStrength1">0.9</Property>
+		<Property name="noiseReductionStrength0">0.9</Property>
+		<Property name="noiseReductionStrength3">0.9</Property>
+		<Property name="noiseReductionStrength2">0.9</Property>
+	</Group>
+	<Group id="tctmf800">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">0.5</Property>
+		<Property name="colorFilterStrength1">0.5</Property>
+		<Property name="colorFilterStrength2">0.5</Property>
+		<Property name="colorFilterStrength3">0.5</Property>
+		<Property name="colorFilterStrength4">0.5</Property>
+		<Property name="colorFilterStrength5">0.5</Property>
+		<Property name="colorFilterStrength6">0.5</Property>
+		<Property name="colorFilterStrength7">0.5</Property>
+		<Property name="colorFilterStrength8">0.5</Property>
+		<Property name="colorFilterStrength9">0.5</Property>
+		<Property name="sharpen9">2.6</Property>
+		<Property name="sharpen8">2.6</Property>
+		<Property name="sharpen7">2.6</Property>
+		<Property name="sharpen6">2.6</Property>
+		<Property name="sharpen5">2.6</Property>
+		<Property name="sharpen4">2.6</Property>
+		<Property name="sharpen3">2.6</Property>
+		<Property name="sharpen2">2.6</Property>
+		<Property name="sharpen1">2.6</Property>
+		<Property name="sharpen0">2.6</Property>
+		<Property name="noiseReductionStrength9">1</Property>
+		<Property name="noiseReductionStrength8">1</Property>
+		<Property name="noiseReductionStrength5">1</Property>
+		<Property name="noiseReductionStrength4">1</Property>
+		<Property name="noiseReductionStrength7">1</Property>
+		<Property name="noiseReductionStrength6">1</Property>
+		<Property name="noiseReductionStrength1">1</Property>
+		<Property name="noiseReductionStrength0">1</Property>
+		<Property name="noiseReductionStrength3">1</Property>
+		<Property name="noiseReductionStrength2">1</Property>
+	</Group>
+	<Group id="tctmf1200">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">0.6</Property>
+		<Property name="colorFilterStrength1">0.6</Property>
+		<Property name="colorFilterStrength2">0.6</Property>
+		<Property name="colorFilterStrength3">0.6</Property>
+		<Property name="colorFilterStrength4">0.6</Property>
+		<Property name="colorFilterStrength5">0.6</Property>
+		<Property name="colorFilterStrength6">0.6</Property>
+		<Property name="colorFilterStrength7">0.6</Property>
+		<Property name="colorFilterStrength8">0.6</Property>
+		<Property name="colorFilterStrength9">0.6</Property>
+		<Property name="sharpen9">2.6</Property>
+		<Property name="sharpen8">2.6</Property>
+		<Property name="sharpen7">2.6</Property>
+		<Property name="sharpen6">2.6</Property>
+		<Property name="sharpen5">2.6</Property>
+		<Property name="sharpen4">2.6</Property>
+		<Property name="sharpen3">2.6</Property>
+		<Property name="sharpen2">2.6</Property>
+		<Property name="sharpen1">2.6</Property>
+		<Property name="sharpen0">2.6</Property>
+		<Property name="noiseReductionStrength9">1</Property>
+		<Property name="noiseReductionStrength8">1</Property>
+		<Property name="noiseReductionStrength5">1</Property>
+		<Property name="noiseReductionStrength4">1</Property>
+		<Property name="noiseReductionStrength7">1</Property>
+		<Property name="noiseReductionStrength6">1</Property>
+		<Property name="noiseReductionStrength1">1</Property>
+		<Property name="noiseReductionStrength0">1</Property>
+		<Property name="noiseReductionStrength3">1</Property>
+		<Property name="noiseReductionStrength2">1</Property>
+	</Group>
+	<Group id="tctmf2000">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">0.7</Property>
+		<Property name="colorFilterStrength1">0.7</Property>
+		<Property name="colorFilterStrength2">0.7</Property>
+		<Property name="colorFilterStrength3">0.7</Property>
+		<Property name="colorFilterStrength4">0.7</Property>
+		<Property name="colorFilterStrength5">0.7</Property>
+		<Property name="colorFilterStrength6">0.7</Property>
+		<Property name="colorFilterStrength7">0.7</Property>
+		<Property name="colorFilterStrength8">0.7</Property>
+		<Property name="colorFilterStrength9">0.7</Property>
+		<Property name="sharpen9">2.6</Property>
+		<Property name="sharpen8">2.6</Property>
+		<Property name="sharpen7">2.6</Property>
+		<Property name="sharpen6">2.6</Property>
+		<Property name="sharpen5">2.6</Property>
+		<Property name="sharpen4">2.6</Property>
+		<Property name="sharpen3">2.6</Property>
+		<Property name="sharpen2">2.6</Property>
+		<Property name="sharpen1">2.6</Property>
+		<Property name="sharpen0">2.6</Property>
+		<Property name="noiseReductionStrength9">1</Property>
+		<Property name="noiseReductionStrength8">1</Property>
+		<Property name="noiseReductionStrength5">1</Property>
+		<Property name="noiseReductionStrength4">1</Property>
+		<Property name="noiseReductionStrength7">1</Property>
+		<Property name="noiseReductionStrength6">1</Property>
+		<Property name="noiseReductionStrength1">1</Property>
+		<Property name="noiseReductionStrength0">1</Property>
+		<Property name="noiseReductionStrength3">1</Property>
+		<Property name="noiseReductionStrength2">1</Property>
+	</Group>
+	<Group id="tctmf3600">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">0.8</Property>
+		<Property name="colorFilterStrength1">0.8</Property>
+		<Property name="colorFilterStrength2">0.8</Property>
+		<Property name="colorFilterStrength3">0.8</Property>
+		<Property name="colorFilterStrength4">0.8</Property>
+		<Property name="colorFilterStrength5">0.8</Property>
+		<Property name="colorFilterStrength6">0.8</Property>
+		<Property name="colorFilterStrength7">0.8</Property>
+		<Property name="colorFilterStrength8">0.8</Property>
+		<Property name="colorFilterStrength9">0.8</Property>
+		<Property name="sharpen9">2.2</Property>
+		<Property name="sharpen8">2.2</Property>
+		<Property name="sharpen7">2.2</Property>
+		<Property name="sharpen6">2.2</Property>
+		<Property name="sharpen5">2.2</Property>
+		<Property name="sharpen4">2.2</Property>
+		<Property name="sharpen3">2.2</Property>
+		<Property name="sharpen2">2.2</Property>
+		<Property name="sharpen1">2.2</Property>
+		<Property name="sharpen0">2.2</Property>
+		<Property name="noiseReductionStrength9">1</Property>
+		<Property name="noiseReductionStrength8">1</Property>
+		<Property name="noiseReductionStrength5">1</Property>
+		<Property name="noiseReductionStrength4">1</Property>
+		<Property name="noiseReductionStrength7">1</Property>
+		<Property name="noiseReductionStrength6">1</Property>
+		<Property name="noiseReductionStrength1">1</Property>
+		<Property name="noiseReductionStrength0">1</Property>
+		<Property name="noiseReductionStrength3">1</Property>
+		<Property name="noiseReductionStrength2">1</Property>
+	</Group>
+	<Group id="tctmf6400">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">1</Property>
+		<Property name="colorFilterStrength1">1</Property>
+		<Property name="colorFilterStrength2">1</Property>
+		<Property name="colorFilterStrength3">1</Property>
+		<Property name="colorFilterStrength4">1</Property>
+		<Property name="colorFilterStrength5">1</Property>
+		<Property name="colorFilterStrength6">1</Property>
+		<Property name="colorFilterStrength7">1</Property>
+		<Property name="colorFilterStrength8">1</Property>
+		<Property name="colorFilterStrength9">1</Property>
+		<Property name="sharpen9">1.8</Property>
+		<Property name="sharpen8">1.8</Property>
+		<Property name="sharpen7">1.8</Property>
+		<Property name="sharpen6">1.8</Property>
+		<Property name="sharpen5">1.8</Property>
+		<Property name="sharpen4">1.8</Property>
+		<Property name="sharpen3">1.8</Property>
+		<Property name="sharpen2">1.8</Property>
+		<Property name="sharpen1">1.8</Property>
+		<Property name="sharpen0">1.8</Property>
+		<Property name="noiseReductionStrength9">1</Property>
+		<Property name="noiseReductionStrength8">1</Property>
+		<Property name="noiseReductionStrength5">1</Property>
+		<Property name="noiseReductionStrength4">1</Property>
+		<Property name="noiseReductionStrength7">1</Property>
+		<Property name="noiseReductionStrength6">1</Property>
+		<Property name="noiseReductionStrength1">1</Property>
+		<Property name="noiseReductionStrength0">1</Property>
+		<Property name="noiseReductionStrength3">1</Property>
+		<Property name="noiseReductionStrength2">1</Property>
+	</Group>
+	<Group id="tctmf9600">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">1.1</Property>
+		<Property name="colorFilterStrength1">1.1</Property>
+		<Property name="colorFilterStrength2">1.1</Property>
+		<Property name="colorFilterStrength3">1.1</Property>
+		<Property name="colorFilterStrength4">1.1</Property>
+		<Property name="colorFilterStrength5">1.1</Property>
+		<Property name="colorFilterStrength6">1.1</Property>
+		<Property name="colorFilterStrength7">1.1</Property>
+		<Property name="colorFilterStrength8">1.1</Property>
+		<Property name="colorFilterStrength9">1.1</Property>
+		<Property name="sharpen9">1.7</Property>
+		<Property name="sharpen8">1.7</Property>
+		<Property name="sharpen7">1.7</Property>
+		<Property name="sharpen6">1.7</Property>
+		<Property name="sharpen5">1.7</Property>
+		<Property name="sharpen4">1.7</Property>
+		<Property name="sharpen3">1.7</Property>
+		<Property name="sharpen2">1.7</Property>
+		<Property name="sharpen1">1.7</Property>
+		<Property name="sharpen0">1.7</Property>
+		<Property name="noiseReductionStrength9">1.1</Property>
+		<Property name="noiseReductionStrength8">1.1</Property>
+		<Property name="noiseReductionStrength5">1.1</Property>
+		<Property name="noiseReductionStrength4">1.1</Property>
+		<Property name="noiseReductionStrength7">1.1</Property>
+		<Property name="noiseReductionStrength6">1.1</Property>
+		<Property name="noiseReductionStrength1">1.1</Property>
+		<Property name="noiseReductionStrength0">1.1</Property>
+		<Property name="noiseReductionStrength3">1.1</Property>
+		<Property name="noiseReductionStrength2">1.1</Property>
+	</Group>
+	<Group id="tctmf9600++">
+		<Property name="deghostingStrength">40</Property>
+		<Property name="colorFilterStrength0">1.6</Property>
+		<Property name="colorFilterStrength1">1.6</Property>
+		<Property name="colorFilterStrength2">1.6</Property>
+		<Property name="colorFilterStrength3">1.6</Property>
+		<Property name="colorFilterStrength4">1.6</Property>
+		<Property name="colorFilterStrength5">1.6</Property>
+		<Property name="colorFilterStrength6">1.6</Property>
+		<Property name="colorFilterStrength7">1.6</Property>
+		<Property name="colorFilterStrength8">1.6</Property>
+		<Property name="colorFilterStrength9">1.6</Property>
+		<Property name="sharpen9">1.6</Property>
+		<Property name="sharpen8">1.6</Property>
+		<Property name="sharpen7">1.6</Property>
+		<Property name="sharpen6">1.6</Property>
+		<Property name="sharpen5">1.6</Property>
+		<Property name="sharpen4">1.6</Property>
+		<Property name="sharpen3">1.6</Property>
+		<Property name="sharpen2">1.6</Property>
+		<Property name="sharpen1">1.6</Property>
+		<Property name="sharpen0">1.6</Property>
+		<Property name="noiseReductionStrength9">1.4</Property>
+		<Property name="noiseReductionStrength8">1.4</Property>
+		<Property name="noiseReductionStrength5">1.4</Property>
+		<Property name="noiseReductionStrength4">1.4</Property>
+		<Property name="noiseReductionStrength7">1.4</Property>
+		<Property name="noiseReductionStrength6">1.4</Property>
+		<Property name="noiseReductionStrength1">1.4</Property>
+		<Property name="noiseReductionStrength0">1.4</Property>
+		<Property name="noiseReductionStrength3">1.4</Property>
+		<Property name="noiseReductionStrength2">1.4</Property>
+	</Group>
+</PropertySet>

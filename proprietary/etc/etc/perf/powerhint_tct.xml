@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2020 Tcl Corporation Limited -->
+
+<HintConfigs>
+    <Powerhint>
+        <!-- sports mode -->
+        <!-- B cpu min freq "MAX" -->
+        <!-- L cpu min freq "MAX" -->
+        <!-- B cpu min core "MAX" -->
+        <!-- L cpu min core "MAX" -->
+        <!-- gpu min freq "MAX" -->
+        <Config
+            Id="0x1501" type="-1" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x40800200, 0xfff, 0x41000200, 0x2,
+            0x41000100, 0x6, 0x4280c000, 625"/>
+        <Config
+            Id="0x1501" type="-1" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x41000100, 0x6, 0x4280c000, 800"/>
+
+        <!-- dex opt -->
+        <Config
+            Id="0x1502" type="-1" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x40800200, 0xfff, 0x41000200, 0x2,
+            0x41000100, 0x6, 0x4280c000, 625"/>
+        <Config
+            Id="0x1502" type="-1" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x41000100, 0x6, 0x4280c000, 800"/>
+
+        <!-- scrolling -->
+        <Config
+            Id="0x1503" type="-1" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x40800200, 0xfff, 0x41000200, 0x2,
+            0x41000100, 0x6, 0x4280c000, 625"/>
+        <Config
+            Id="0x1503" type="-1" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x41000100, 0x6, 0x4280c000, 800"/>
+
+        <!-- rotate -->
+        <Config
+            Id="0x1504" type="-1" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x40800200, 0xfff, 0x41000200, 0x2,
+            0x41000100, 0x6, 0x4280c000, 625"/>
+        <Config
+            Id="0x1504" type="-1" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x41000100, 0x6, 0x4280c000, 800"/>
+
+        <!-- wake up -->
+        <Config
+            Id="0x1505" type="-1" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x40800200, 0xfff, 0x41000200, 0x2,
+            0x41000100, 0x6, 0x4280c000, 625"/>
+        <Config
+            Id="0x1505" type="-1" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x41000100, 0x6, 0x4280c000, 800"/>
+
+        <!-- app launch -->
+        <Config
+            Id="0x1506" type="-1" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x40800200, 0xfff, 0x41000200, 0x2,
+            0x41000100, 0x6, 0x4280c000, 625"/>
+        <Config
+            Id="0x1506" type="-1" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40800000, 0xfff, 0x40800100, 0xfff, 0x41000000, 0x2,
+            0x41000100, 0x6, 0x4280c000, 800"/>
+    </Powerhint>
+</HintConfigs>

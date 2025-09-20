@@ -1,0 +1,43 @@
+service oem.logcatd /vendor/bin/oem_log_util "logcat"
+    disabled
+    user system
+    group log
+    writepid /dev/cpuset/system-background/tasks
+    oom_score_adjust -600
+    oneshot
+
+service oem.klogd /vendor/bin/oem_log_util "klog"
+    disabled
+    user system
+    group system
+    writepid /dev/cpuset/system-background/tasks
+    oom_score_adjust -600
+    oneshot
+
+service oem.minilog /vendor/bin/oem_log_util "minilog"
+    disabled
+    user system
+    group log root
+    writepid /dev/cpuset/system-background/tasks
+    oom_score_adjust -600
+    oneshot
+
+on post-fs
+    mkdir /oempersist/minilog 0755 system log
+    mkdir /oempersist/minilog/powerup_reason 0755 system log
+    mkdir /oempersist/minilog/kernel_crash 0775 system log
+    start oem.minilog
+
+#on property:ro.boottime.time_daemon=*
+#    start oem.minilog
+
+on post-fs && property:ro.boot.oemtoken=true
+    mkdir /oempersist/minilog/boot 0700 system log
+    start oem.klogd
+
+on boot && property:ro.boot.oemtoken=true
+    start oem.logcatd
+
+on property:sys.boot_completed=1 && property:ro.boot.oemtoken=true
+    stop oem.klogd
+    stop oem.logcatd

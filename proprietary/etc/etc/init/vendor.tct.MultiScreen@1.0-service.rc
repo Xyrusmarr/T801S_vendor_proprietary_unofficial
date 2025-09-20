@@ -1,0 +1,5 @@
+service MultiScreen_hal_service /vendor/bin/hw/vendor.tct.MultiScreen@1.0-service
+    class hal
+    user system
+    group system media_rw 
+    interface vendor.tct.MultiScreen@1.0::IMultiScreen default

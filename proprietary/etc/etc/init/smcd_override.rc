@@ -1,0 +1,28 @@
+on post-fs-data
+    mkdir /data/vendor/diag_logs 0770 system oem_2902
+    chown root oem_2902 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+    chmod 0664 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+
+service tct_diag_mdlog /vendor/bin/diag_mdlog -q 2 -j 1 -s 128 -u -n 20 -f /data/vendor/diag_logs/Diag.cfg -o /data/vendor/diag_logs/ -c
+    user system
+    group system oem_2901 oem_2902
+    disabled
+    oneshot
+    seclabel u:r:vendor_qlogd:s0
+    override
+
+service tct_diag_mdlog_large /vendor/bin/diag_mdlog -q 2 -j 1 -s 128 -u -n 200 -f /data/vendor/diag_logs/Diag.cfg -o /data/vendor/diag_logs/ -c
+    user system
+    group system oem_2901 oem_2902
+    disabled
+    oneshot
+    seclabel u:r:vendor_qlogd:s0
+    override
+
+service tct_kill_dm /vendor/bin/diag_mdlog -u -k
+    user system
+    group system oem_2901 oem_2902
+    disabled
+    oneshot
+    seclabel u:r:vendor_qlogd:s0
+    override

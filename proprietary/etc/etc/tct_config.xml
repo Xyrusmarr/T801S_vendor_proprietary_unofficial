@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<firefly configId="1" enableUpdate="false" version="1">
+    
+    <feature id="100" name="fastfreeze">
+        <item name="fastfreeze_whiteapp" value="com.tencent.mm,com.tencent.mobileqq,com.tcl.auto.componenttest" />
+    </feature>
+    
+    <feature id="101" name="enable_5g">
+        
+        <item name="device_list" value="seattle,ottawa,irvine,chicago,buffalo" />
+        
+        
+    </feature>
+    
+    <feature enable="true" id="102" name="update_speed_real_time">
+    </feature>
+    
+    <feature id="103" name="check_freeze">
+        
+        <item name="ottawa_ecid" value="21460000" />
+    </feature>
+
+    
+    <feature id="104" name="download">
+        <item name="start_download" value="35" />
+        <item name="stop_large_download" value="20" />
+        <item name="stop_low_download" value="10" />
+        <item name="stop_timer_large" value="10" />
+        <item name="stop_timer_low" value="6" />
+        <item name="stop_no_download" value="3" />
+        <item name="check_interval" value="5000" />
+        <item name="enable_reported" value="1" />
+        <item name="big_data_start_threshold" value="512" />
+        <item name="big_data_end_threshold" value="300" />
+        <item name="big_data_mid_threshold" value="50" />
+        <item name="big_data_check_time" value="6" />
+    </feature>
+    
+    <feature enable="false" id="105" name="watchdog">
+    </feature>
+    
+    
+    <feature enable="true" id="106" name="feature_sensor" />
+    <feature id="107" name="iolimit" />
+    <feature enable="false" id="108" name="hyperhold" />
+    <feature id="113" name="feature_fired">
+        
+        <item name="214" value="1" />
+        
+        <item name="215" value="1" />
+        
+        <item name="216" value="1" />
+    </feature>
+    <feature id="114" name="app_standby" />
+    
+    <feature id="115" name="tct_perf_config">
+        
+        <item name="PERF_CPU_CGROUPCONTROL" value="1" />
+    </feature>
+    
+    <feature id="116" name="firefly_module">
+        
+        <item name="iolimit" value="9|com.tct.firefly.core.scene.EasyBackgroupScene|false" />
+        
+        <item name="limitres" value="10|com.tct.firefly.core.scene.LimitResourceBasisOfScene|true" />
+    </feature>
+    
+    <feature enable="false" id="117" name="feature_wechat">
+        
+        <item name="217" value="1" />
+        
+        <item name="218" value="1270|1390|40|3|0x17|0xf1|0x03" />
+        
+        <item name="219" value="com.tencent.mm" />
+    </feature>
+    
+    <feature enable="false" id="997" name="data_coll" />
+    <feature id="998" name="feature_tms_enabled" />
+    
+    <feature id="999" name="data_hub" />
+    <feature enable="false" id="118" name="game_policy" />
+    
+    <feature enable="false" id="119" name="high_refresh_rate" />
+    
+    <feature enable="false" id="122" name="sleep_predication">
+        <item name="charging" value="1" />
+        <item name="power-save" value="1" />
+        <item name="topn" value="3" />
+        <item name="statistics_day" value="15" />
+        <item name="statistics_min" value="7" />
+    </feature>
+</firefly>
+
+
