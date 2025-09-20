@@ -1,0 +1,8 @@
+hostdriver: 5.2.03.25M
+riva: 1.0.1.314.0
+firmware: WLAN.HL.3.2.1.c1-00053-QCAHLSWMTPLZ-1
+Wi-Fi HW: 400b0000
+bluetooth: BTFM.CHE.3.2.0-00428-QCACHROMZ-1
+nfc: 0x01057251
+tp: 2.0
+iris: csot,7.0 tdt,8.0

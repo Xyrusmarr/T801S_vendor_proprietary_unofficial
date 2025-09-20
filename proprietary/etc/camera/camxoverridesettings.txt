@@ -1,0 +1,33 @@
+multiCameraEnable=TRUE
+enableRawHDR=FALSE
+gc5035_tuning=4.15.10.9
+s5kgw1_tuning=4.44.36.33
+#Disable Debug Data Temporary due to unknonw crash.
+enable3ADebugData=FALSE
+enableTuningMetadata=FALSE
+tintlessEnable=TRUE
+#Disable QCFA till we make sure it worked fine.
+AECGainThresholdForQCFA=1.2
+overrideLogLevels=7
+logInfoMask=0
+logWarningMask=0
+logVerboseMask=0
+#logVerboseMask=0x50080#CamxLogGroupHAL+CamxLogGroupCore+CamxLogGroupChi =0x50080
+logRequestMapping=0
+#raiserecoverysigabrt=TRUE
+enableHJAF=FALSE
+disableFocusIndication=TRUE
+multiCameraFPSMatchMask=0x1
+multiCameraHWSyncMask=0x1
+multiCameraFrameSyncMask=0x1
+FDClient=FDSWOnly
+FDMultiCamProcess=FDMultiCamProcessMasterOnly
+FDPreprocessing=Disable
+#enableFDManagerThreading=FALSE
+#useFDInternalBuffers=FALSE
+#enablePTDetection=FALSE
+#enableSMDetection=FALSE
+#enableGBDetection=FALSE
+#enableCTDetection=FALSE
+#for warmstart
+numPCRsBeforeStreamOn=1

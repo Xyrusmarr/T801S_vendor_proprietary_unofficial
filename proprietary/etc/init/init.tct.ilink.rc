@@ -1,0 +1,27 @@
+#[TCT-ROM][TMultiScreenShare]add by xiaorong.ling for  D11424719 on 2021/09/13
+# service copy_ilink_setup /vendor/bin/copy_ilink_setup.sh
+#     user shell
+#     group shell root
+#     oneshot
+#     disabled
+
+# on property:dev.bootcomplete=1
+#     write /dev/kmsg "start do multi-screen copy"
+#     start copy_ilink_setup
+    # write /dev/kmsg "End do multi-screen copy"
+
+
+on property:sys.usb.ilink.enable=true
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/cdrom "1"
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/file "/preload/aio_custom/etc/MultiScreenShare.iso"
+
+#must write null to file so kernel will close this file
+on property:sys.usb.ilink.enable=false
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/cdrom "0"
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/file ""
+
+# for debug
+# on property:vendor.dev.bootcomplete=1
+#     write /dev/kmsg "start do multi-screen copy"
+#     start copy_ilink_setup
+#     write /dev/kmsg "End do multi-screen copy"

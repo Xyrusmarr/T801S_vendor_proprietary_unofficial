@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<exceptions>
+  <exception
+    package="com.speedymovil.wire"
+    sha256-cert-digest="7D:72:26:77:2D:4F:6D:77:8F:EF:53:A3:6B:E1:5A:D7:8D:8D:9D:4B:C4:CE:00:C5:F2:E3:21:6C:19:48:0F:A0">
+    <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+    <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+    <permission name="android.permission.PROCESS_OUTGOING_CALLS" fixed="false"/>
+    <permission name="android.permission.CALL_PHONE" fixed="false"/>
+  </exception>
+</exceptions>

@@ -1,0 +1,18 @@
+#! /vendor/etc/init
+#=============================================================================
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#=============================================================================
+
+on early-init
+    # Set ro.boot.product.vendor.sku to soc_name
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.qcv.sh
+    setprop ro.boot.product.vendor.sku ${ro.vendor.qti.soc_name}
+    setprop ro.soc.model ${ro.vendor.qti.soc_model}
+
+on property:ro.vendor.qti.soc_id=459
+    setprop ro.vendor.board.platform.cpu.type "Snapdragon 750G"
+
+on property:ro.vendor.qti.soc_id=434
+    setprop ro.vendor.board.platform.cpu.type "Snapdragon 690"
